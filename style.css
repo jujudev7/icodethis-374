@@ -33,16 +33,16 @@ main {
 }
 
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
   margin-top: 50px;
   font-weight: bold;
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2rem;
-  margin-top: 12px;
+  margin-top: 13px;
   margin-bottom: 8px;
 }
 
@@ -69,6 +69,15 @@ p {
   padding: 6px 8px;
   transition: transform 0.5s ease;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat img {
+  height: 18px;
+  width: 20px;
+  margin-right: 5px;
 }
 
 .cat:hover {
@@ -82,6 +91,19 @@ p {
   gap: 70px;
 }
 
+.chevron-left,
+.chevron-right {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chevron-left:hover svg path,
+.chevron-right:hover svg path {
+  stroke: #646df0;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -89,14 +111,14 @@ p {
   width: 150px;
 }
 
-img {
+.card img {
   border-radius: 50%;
   width: 90px;
   margin: 0 auto;
   transition: transform 0.25s ease;
 }
 
-img:hover {
+.card img:hover {
   transform: scale(1.3);
 }
 
