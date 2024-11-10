@@ -3,88 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Design to code #374 | Julien Penna</title>
-    <body>
-      <main>
-        <h1>Subscriptions</h1>
-        <p>
-          Support these creators by purchasing their monthly subscriptions, and
-          get access to premium content:
-        </p>
-        <div class="categories">
-          <div class="cat"><img src="/icons/paperclip.svg" alt=""> Source files</div>
-          <div class="cat"><img src="/icons/cast.svg" alt=""> Live streams</div>
-          <div class="cat"><img src="/icons/calendar.svg" alt="">Meetup</div>
-        </div>
-        <div class="carousel">
-          <div class="chevron-left">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#1e1d4f" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-            </svg>
-          </div>
-          <div class="card">
-            <img src="/img/ludwig-lagos.jpg" alt="Ludwig Lagos" />
-            <h2 class="name">Ludwig Lagos</h2>
-            <span class="job">Illustrator</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/nina-valentine.jpg" alt="Nina Valentine" />
-            <h2 class="name">Nina Valentine</h2>
-            <span class="job">3D artist</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/karolina-vargas.jpg" alt="Karolina Vargas" />
-            <h2 class="name">Karolina Vargas</h2>
-            <span class="job">Illustrator</span>
-            <button>View content</button>
-          </div>
-          <div class="chevron-right">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#1e1d4f" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>
-          </div>
-          <!-- <div class="card">
-            <img src="/img/aiony-haust.jpg" alt="Aiony Haust" />
-            <h2 class="name">Aiony Haust</h2>
-            <span class="job">Graphist</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/amy-smiley.jpg" alt="Amy Smiley" />
-            <h2 class="name">Amy Smiley</h2>
-            <span class="job">Web designer</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/cesar-rincon.jpg" alt="Cesar Rincon" />
-            <h2 class="name">Cesar Rincon</h2>
-            <span class="job">Photographer</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/lucas-gouvea.jpg" alt="Lucas Gouvea" />
-            <h2 class="name">Lucas Gouvea</h2>
-            <span class="job">3D designer</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/jordana-gonzalez.jpg" alt="Jordana Gonzalez" />
-            <h2 class="name">Jordana Gonzalez</h2>
-            <span class="job">Streamer</span>
-            <button>View content</button>
-          </div>
-          <div class="card">
-            <img src="/img/jose-braga.jpg" alt="José Braga" />
-            <h2 class="name">José Braga</h2>
-            <span class="job">Street-artist</span>
-            <button>View content</button>
-          </div> -->
-        </div>
-      </main>
-      <div class="bg-bg">
   </head>
-</body>
+
+  <body>
+    <main>
+      <h1>Subscriptions</h1>
+      <p>
+        Support these creators by purchasing their monthly subscriptions, and
+        get access to premium content:
+      </p>
+      <div class="categories">
+        <div class="cat">
+          <img src="/icons/paperclip.svg" alt="" /> Source files
+        </div>
+        <div class="cat"><img src="/icons/cast.svg" alt="" /> Live streams</div>
+        <div class="cat"><img src="/icons/calendar.svg" alt="" />Meetup</div>
+      </div>
+      <div class="carousel">
+        <div class="chevron-left" onclick="scrollToLeft()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="#1e1d4f"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="card">
+          <img src="/img/ludwig-lagos.jpg" alt="Ludwig Lagos" />
+          <h2>Ludwig Lagos</h2>
+          <span class="job">Illustrator</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/nina-valentine.jpg" alt="Nina Valentine" />
+          <h2>Nina Valentine</h2>
+          <span class="job">3D artist</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/karolina-vargas.jpg" alt="Karolina Vargas" />
+          <h2>Karolina Vargas</h2>
+          <span class="job">Illustrator</span>
+          <button>View content</button>
+        </div>
+
+        <div class="card">
+          <img src="/img/aiony-haust.jpg" alt="Aiony Haust" />
+          <h2>Aiony Haust</h2>
+          <span class="job">Graphist</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/amy-smiley.jpg" alt="Amy Smiley" />
+          <h2>Amy Smiley</h2>
+          <span class="job">Web designer</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/cesar-rincon.jpg" alt="Cesar Rincon" />
+          <h2>Cesar Rincon</h2>
+          <span class="job">Photographer</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/lucas-gouvea.jpg" alt="Lucas Gouvea" />
+          <h2>Lucas Gouvea</h2>
+          <span class="job">3D designer</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/jordana-gonzalez.jpg" alt="Jordana Gonzalez" />
+          <h2>Jordana Gonzalez</h2>
+          <span class="job">Streamer</span>
+          <button>View content</button>
+        </div>
+        <div class="card">
+          <img src="/img/jose-braga.jpg" alt="José Braga" />
+          <h2>José Braga</h2>
+          <span class="job">Street-artist</span>
+          <button>View content</button>
+        </div>
+        <div class="chevron-right" onclick="scrollToRight()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="#1e1d4f"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+    <div class="bg-bg"></div>
+    <script src="main.js"></script>
+  </body>
 </html>
